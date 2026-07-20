@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Selection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <main class="center-panel">
+      <div class="selection-card">
+        <h1>Select Province & Hospital</h1>
+        <p id="user-banner" class="help-text"></p>
+
+        <div>
+          <label for="province">Province:</label>
+          <select id="province" name="province" required>
+            <option value="">Select a province</option>
+            <option value="Kwa-Zulu-Natal">Kwa-Zulu-Natal</option>
+            <option value="Eastern Cape">Eastern Cape</option>
+            <option value="Free State">Free State</option>
+            <option value="Gauteng">Gauteng</option>
+            <option value="Limpopo">Limpopo</option>
+            <option value="Mpumalanga">Mpumalanga</option>
+            <option value="North West">North West</option>
+            <option value="Northern Cape">Northern Cape</option>
+            <option value="Western Cape">Western Cape</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="hospital">Hospital Name:</label>
+          <select id="hospital" name="hospital" required>
+            <option value="">Select a hospital</option>
+          </select>
+        </div>
+
+        <div class="selection-actions">
+          <button id="continue-button" type="button" class="primary-button">Continue to Beds</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  
+  <script src="hospital-selection.js" defer></script>
+</body>
+</html>

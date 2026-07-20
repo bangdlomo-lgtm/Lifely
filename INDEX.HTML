@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifely</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="loading-text">Lifely</div>
+    </div>
+        <main class="center-panel">
+            <form id="login-form" action="/login" method="POST">
+                <h1>Welcome to Lifely</h1>
+                <p>A bed for a life</p>
+
+                <h2>Please Login</h2>
+                <div id="message" class="message"></div>
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <button type="submit">Login</button>
+            </form>
+        </main>
+
+    <script src="index.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

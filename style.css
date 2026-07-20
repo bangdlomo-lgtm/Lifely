@@ -1,0 +1,276 @@
+﻿/* 1. Global page layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #04070f;
+    color: #ffffff;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+form,
+.selection-card {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 40px 36px;
+    box-shadow: 0 28px 90px rgba(0, 0, 0, 0.16);
+    width: 100%;
+}
+
+.page-shell {
+    width: 100%;
+    max-width: 480px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.center-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.selection-actions {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.selection-actions .back-link {
+    margin-left: 12px;
+}
+
+h1 {
+    color: #0f172a;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+p {
+    color: #475569;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+h2 {
+    color: #0f172a;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+div {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #334155;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #f8fafc;
+    color: #334155;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12);
+    background-color: #ffffff;
+}
+
+button[type="submit"],
+button.primary-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button.primary-button:hover,
+button[type="submit"]:hover {
+    background-color: #0369a1;
+    transform: translateY(-1px);
+}
+
+.confirmation-card {
+    background: #ffffff;
+    color: #0f172a;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
+    max-width: 420px;
+    width: 100%;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 16px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+button[type="submit"]:hover {
+    background-color: #0369a1;
+    transform: translateY(-1px);
+}
+
+.message {
+    min-height: 1.5em;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.message.info {
+    color: #475569;
+}
+
+.message.success {
+    color: #065f46;
+}
+
+.message.error {
+    color: #b91c1c;
+}
+
+.help-text {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* Bed count styling */
+.bed-count {
+    color: #b91c1c;
+    font-weight: 800;
+}
+
+.suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: #ffffff;
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.suggestion-item:hover {
+    background-color: #e2e8f0;
+}
+
+#loading-overlay {
+    /* Position it fixed relative to the screen, covering all corners */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  /* Make sure it sits on top of every other element on the page */
+  z-index: 9999; 
+  
+  /* Give it a solid background so the page behind it is invisible */
+  background-color: #111111; /* Or whatever solid color/gradient you prefer */
+  
+  /* Center your loading spinner or text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Smooth transition for when you add the "hidden" class */
+  transition: opacity 2s ease;
+  opacity: 1;
+}
+
+.loading-text {
+    color: #ffffff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    font-weight: 800;
+    animation: logoIntro 6s ease forwards;
+}
+
+@keyframes logoIntro {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    20% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+        visibility: hidden;
+    }
+}
+
+#loading-overlay.hidden {
+    opacity: 1;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .page-container {
+        padding: 16px;
+    }
+
+    form {
+        padding: 28px 20px;
+    }
+
+    .loading-text {
+        font-size: 3rem;
+    }
+}

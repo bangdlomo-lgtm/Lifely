@@ -1,0 +1,166 @@
+{
+  "PublicHospitals": [
+    {
+      "id": "1",
+      "province": "Kwa-Zulu-Natal",
+      "hospital": "Inkosi Albert Luthuli Hospital",
+      "availableBeds": 7
+    },
+    {
+      "id": "2",
+      "province": "Kwa-Zulu-Natal",
+      "hospital": "Addington Hospital",
+      "availableBeds": 4
+    },
+    {
+      "id": "3",
+      "province": "Kwa-Zulu-Natal",
+      "hospital": "Greys Hospital",
+      "availableBeds": 1
+    },
+    {
+      "id": "4",
+      "province": "Eastern Cape",
+      "hospital": "Livingstone Hospital",
+      "availableBeds": 0
+    },
+    {
+      "id": "5",
+      "province": "Eastern Cape",
+      "hospital": "Cecilia Makiwane Hospital",
+      "availableBeds": 2
+    },
+    {
+      "id": "6",
+      "province": "Eastern Cape",
+      "hospital": "Frere Hospital",
+      "availableBeds": 3
+    },
+    {
+      "id": "7",
+      "province": "Free State",
+      "hospital": "Pelonomi Tertiary Hospital",
+      "availableBeds": 5
+    },
+    {
+      "id": "8",
+      "province": "Free State",
+      "hospital": "Universitas Hospital",
+      "availableBeds": 0
+    },
+    {
+      "id": "9",
+      "province": "Free State",
+      "hospital": "Bloemcare Hospital",
+      "availableBeds": 2
+    },
+    {
+      "id": "10",
+      "province": "Gauteng",
+      "hospital": "Charlotte Maxeke Hospital",
+      "availableBeds": 0
+    },
+    {
+      "id": "11",
+      "province": "Gauteng",
+      "hospital": "Chris Hani Baragwanath Hospital",
+      "availableBeds": 6
+    },
+    {
+      "id": "12",
+      "province": "Gauteng",
+      "hospital": "Netcare Milpark Hospital",
+      "availableBeds": 3
+    },
+    {
+      "id": "13",
+      "province": "Limpopo",
+      "hospital": "Polokwane Hospital",
+      "availableBeds": 0
+    },
+    {
+      "id": "14",
+      "province": "Limpopo",
+      "hospital": "Letaba Hospital",
+      "availableBeds": 2
+    },
+    {
+      "id": "15",
+      "province": "Limpopo",
+      "hospital": "Tzaneen Hospital",
+      "availableBeds": 1
+    },
+    {
+      "id": "16",
+      "province": "Mpumalanga",
+      "hospital": "Rob Ferreira Hospital",
+      "availableBeds": 0
+    },
+    {
+      "id": "17",
+      "province": "Mpumalanga",
+      "hospital": "Ermelo Hospital",
+      "availableBeds": 4
+    },
+    {
+      "id": "18",
+      "province": "Mpumalanga",
+      "hospital": "Nelspruit Medi-Clinic",
+      "availableBeds": 2
+    },
+    {
+      "id": "19",
+      "province": "North West",
+      "hospital": "Tlokwe Hospital",
+      "availableBeds": 0
+    },
+    {
+      "id": "20",
+      "province": "North West",
+      "hospital": "Klerksdorp Hospital",
+      "availableBeds": 1
+    },
+    {
+      "id": "21",
+      "province": "North West",
+      "hospital": "Potchefstroom Hospital",
+      "availableBeds": 2
+    },
+    {
+      "id": "22",
+      "province": "Northern Cape",
+      "hospital": "Tobias Hani District Hospital",
+      "availableBeds": 0
+    },
+    {
+      "id": "23",
+      "province": "Northern Cape",
+      "hospital": "Kimberley Hospital",
+      "availableBeds": 0
+    },
+    {
+      "id": "24",
+      "province": "Northern Cape",
+      "hospital": "Sol Plaatje Hospital",
+      "availableBeds": 1
+    },
+    {
+      "id": "25",
+      "province": "Western Cape",
+      "hospital": "Groote Schuur Hospital",
+      "availableBeds": 3
+    },
+    {
+      "id": "26",
+      "province": "Western Cape",
+      "hospital": "Tygerberg Hospital",
+      "availableBeds": 5
+    },
+    {
+      "id": "27",
+      "province": "Western Cape",
+      "hospital": "Stellenbosch Hospital",
+      "availableBeds": 3
+    }
+  ]
+}
