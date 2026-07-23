@@ -73,6 +73,10 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => overlay.classList.add("hidden"), 5000);
     setTimeout(() => overlay.remove(), 7000);
 
+    overlay.addEventListener("contextmenu", (event) => {
+      event.preventDefault();
+      overlay.remove();
+    });
   }
 
   const loginForm = document.getElementById("login-form");
