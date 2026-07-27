@@ -9,7 +9,7 @@ const renderConfirmation = () => {
   if (!container) return;
 
   container.innerHTML = `
-    <h2>Selection confirmed</h2>
+    <h2>Bed availability</h2>
     <p><strong>Hospital:</strong> ${hospital}</p>
     <p><strong>Available beds:</strong> <span class="bed-count">${beds}</span></p>
   `;
