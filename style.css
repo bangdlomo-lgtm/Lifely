@@ -202,14 +202,16 @@ button[type="submit"]:hover {
 
 /* Bed count styling */
 .bed-count {
-    color: #b91c1c;
+    color: #0f172a;
     font-weight: 800;
 }
 
-/* Make hospital names in bed status more prominent/darker */
-.bed-status strong:not(.bed-count) {
-    color: #0f172a; /* dark navy for hospital names */
-    font-weight: 700;
+/* Make hospital names and bed counts bold and black */
+.bed-status strong,
+.confirmation-card strong,
+.bed-count {
+    color: #0f172a;
+    font-weight: 800;
 }
 
 .suggestions {
