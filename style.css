@@ -1,6 +1,16 @@
 ﻿/* 1. Global page layout */
-body {
+html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body,
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+}
+
+body {
     background-color: #04070f;
     color: #ffffff;
     margin: 0;
