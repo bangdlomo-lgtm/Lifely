@@ -28,6 +28,8 @@ async function fetchHospitalData() {
 function populateProvinceDropdown(data, provinceSelect) {
   if (!provinceSelect) return;
 
+  const provinces = window.HospitalSelectionData
+    ? window.HospitalSelectionData.getUniqueProvinces(data)
     : [...new Set(data.map((item) => item.province).filter(Boolean))].sort();
 
   provinceSelect.innerHTML = "<option value=''>Select a province</option>";
